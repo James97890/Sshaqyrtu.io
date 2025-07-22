@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тойға шақырту</title>
+  <meta property="og:title" content="Тойға шақырту" />
+  <meta property="og:description" content="сіздерді тойымызға шақырамыз" />
+  <meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/002/267/284/non_2x/festa-junina-celebration-background-free-vector.jpg" />
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif&display=swap');
+    @import url('https://fonts.googleapis.com');
+    @import url('https://fonts.gstatic.com" crossorigin');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Serif', serif;
+      background: url('https://static.vecteezy.com/system/resources/previews/002/267/284/non_2x/festa-junina-celebration-background-free-vector.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #3d2c1e;
+    }
+
+    .container {
+      max-width: 800px;
+      max-height: fit-content;
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .title {
+      font-family: "Lobster", sans-serif;
+      font-size: 3em;
+      color: #a9742a;
+      margin-top: 10px;
+    }
+
+    .intro-image {
+      width: 100%;
+      max-width: 320px;
+      margin: 20px auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .audio-button-wrapper {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 30px auto;
+      border-radius: 50%;
+      background: #ffddf0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+        .gif-frame {
+      position: absolute;
+      top: -30px;
+      left: -30px;
+      width: 180px;
+      height: 180px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .photo-button {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .photo-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-block {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    .gis-button-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .gis-button {
+      display: inline-block;
+      width: 92px;
+      height: 92px;
+      background-image: url('https://optim.tildacdn.pro/tild3630-6232-4566-b064-616130656130/-/cover/92x92/center/center/-/format/webp/unnamed.png');
+      background-size: cover;
+      border-radius: 12px;
+    }
+
+    .calendar-block {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .name {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: xx-large;
+    }
+
+    .calendar-block h2 {
+      color: #730fbf;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+    }
+
+    .calendar table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .calendar th, .calendar td {
+      padding: 10px;
+      border: 1px solid #eee;
+      width: 14.28%;
+      text-align: center;
+    }
+
+    .calendar th {
+      background-color: #c073fb;
+    }
+
+    .calendar .highlight {
+      background: #8115d4;
+      font-weight: bold;
+      color: #000;
+      border: 2px solid #8c28ff;
+    }
+
+    .timer {
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #2f00ff;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Тойымызға шақырту</h1>
+    <h2></h2>
+    <img class="intro-image" src="https://static.vecteezy.com/system/resources/previews/002/267/284/non_2x/festa-junina-celebration-background-free-vector.jpg" alt="Intro Image">
+    <div class="audio-button-wrapper" onclick="toggleAudio()">
+    <img class="gif-frame" src="https://optim.tildacdn.pro/tild6537-6530-4434-b766-383831656136/-/resize/240x/-/format/webp/_3.png" alt="Frame" />
+      <div class="photo-button">
+        <img src="https://optim.tildacdn.pro/tild6132-6638-4764-b632-623263306137/-/cover/120x120/center/center/-/format/webp/pngegg_3.png" alt="Музыка">
+      </div>
+    </div>
+    <audio id="myAudio" src="waf2em.mp3"></audio>
+  </div>
+
+  <div class="container">
+<div class="text-block">
+  Құрметті ағайын-туыс, құда-жекжат, дос-жаран!<br>
+  Сіздерді отбасымыздағы екі бірдей қуанышқа арналған ақ дастарханымыздың қадірлі қонағы болуға шын жүректен шақырамыз:<br>
+  🎉 Асыл анамыз <strong>Алманың</strong> <strong>60 жас мерейтойына</strong><br>
+  🎓 Қызымыз <strong>Раушанның</strong> <strong>мектеп бітіруіне</strong>орай<br>
+  Қуанышымызды бірге бөлісіп, ақ тілектеріңізбен ортақтассаңыз — біз үшін зор мәртебе!
+</div>
+    <div class="text-block">
+      Ізгі ниетпен, <br> <strong>Жанұямыздың  атынан</strong><br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="calendar-block">
+      <h2>Күнтізбе</h2>
+    <div class="name"> <strong>Тамыз айы</strong></div>
+      <div class="calendar">
+        <table>
+          <thead>
+            <tr>
+              <th>Дс</th><th>Сс</th><th>Ср</th><th>Бс</th><th>Жм</th><th>Сн</th><th>Жк</th>
+            </tr>
+          </thead>
+          <tbody>
+      <tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+      <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr>
+      <tr><td class="highlight">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+      <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="timer" id="countdown"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-block">
+      <p>Той болатын күні: <strong>18-ыншы тамыз 2025ж</strong></p>
+      <p>Той басталу уақыты: <strong>18:00 - де</strong></p>
+      <p>Мекен-жайымыз:<br> Жаңаарқа ауылы <br></strong></p>
+      <p><strong>Абая көшесі, 5А</strong></p>
+      <!--<p><strong>Картадан көру үшін төмендегін бас ↓</strong></p>
+    </div>
+  </div class="gis-button-container">
+      <a class="gis-button" href="https://go.2gis.com/EsaBP" target="_blank" aria-label="2ГИС карта" role="img"></a>
+    </div>
+  </div>-->
+
+  <script>
+    function toggleAudio() {
+      const audio = document.getElementById('myAudio');
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("2025-08-18T18:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance <= 0) {
+        countdown.innerHTML = "Той басталды!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `Қалған уақыт: ${days} күн, ${hours} сағат, ${minutes} минут, ${seconds} секунд`;
+    }, 1000);
+  </script>
+</body>
+</html>
